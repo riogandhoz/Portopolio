@@ -1,0 +1,408 @@
+/* Style for Download CV Button */
+.btn-primary {
+    border: 2px solid #5a5a5a; /* Add a border */
+    background-color: transparent; /* Make the background transparent */
+    color: #5a5a5a; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #5a5a5a; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+    border-color: #fff; /* Change border color on hover */
+}
+
+/* Style for Send Message Button */
+button[type="submit"] {
+    border: 2px solid #5a5a5a; /* Add a border */
+    background-color: transparent; /* Make the background transparent */
+    color: #5a5a5a; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #5a5a5a; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+    border-color: #fff; /* Change border color on hover */
+}
+
+/* Background Animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Apply the animation to the body or a specific section */
+body {
+    background: linear-gradient(45deg, #6c63ff, #96fbc4, #ff6f61);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px; /* Navbar height */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Optional: Smooth scroll effect for a more seamless experience */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--btn-bg), var(--btn-hover-bg));
+    color: white;
+    min-height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    background-color: #fff;
+    color: var(--btn-bg);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: var(--navbar-bg);
+}
+
+.nav-item {
+    color: #000;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--btn-bg) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--navbar-text-color) !important;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--btn-bg) !important;
+}
+
+/* About Section */
+#about {
+    background-color: var(--background-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    color: var(--btn-bg);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+#skills {
+    background: linear-gradient(135deg, var(--btn-hover-bg), var(--btn-bg));
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#skills h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item i {
+    font-size: 2.5rem;
+    color: var(--icon-color);
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.skill-item span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.progress {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--btn-bg), var(--btn-hover-bg));
+    height: 100%;
+    width: 0%; /* Animasi dimulai dari 0% */
+    border-radius: 20px;
+    animation: fill-bar 2s ease-out forwards;
+}
+
+.progress-bar span {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Animasi untuk progress bar */
+@keyframes fill-bar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress-width);
+    }
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+.project-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-card .card-body {
+    padding: 15px;
+}
+
+.project-card .btn-group {
+    margin-top: auto;
+}
+
+.project-card .btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text-color);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.project-card .btn:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text-color);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: var(--btn-bg);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contact .form-label {
+    color: #000;
+}
+
+#contact .btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text-color);
+    transition: all 0.3s ease;
+}
+
+#contact .btn:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--footer-text-color);
+    line-height: 1.4;
+}
+
+/* Tema Default (Mode Terang) */
+:root {
+    --background-color: #fff;
+    --text-color: #333;
+    --navbar-bg: #fff;
+    --navbar-text-color: #333;
+    --btn-bg: #6c63ff;
+    --btn-text-color: #fff;
+    --btn-hover-bg: #96fbc4;
+    --btn-hover-text-color: #333;
+    --footer-bg: #333;
+    --footer-text-color: #fff;
+    --icon-color: #333; /* Warna ikon untuk mode terang */
+}
+
+/* Tema Gelap */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --navbar-bg: #1f1f1f;
+    --navbar-text-color: #000000;
+    --btn-bg: #333;
+    --btn-text-color: #fff;
+    --btn-hover-bg: #6c63ff;
+    --btn-hover-text-color: #000;
+    --footer-bg: #000;
+    --footer-text-color: #fff;
+    --icon-color: #fff;
+}
+
+/* Mode Gelap */
+body.dark-mode {
+    background-color: #121212;
+    color: var(--text-color);
+}
+
+body.dark-mode .navbar-light {
+    background-color: #ffffff;
+}
+
+body.dark-mode .btn-outline-secondary {
+    color: #000000;
+    border-color: #fff;
+}
+
+body.dark-mode .hero {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .table-bordered {
+    background-color: #333;
+    color: #000000;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+    color: #000000;
+}
+
+/* Default Styles (Mode Terang) */
+#about h2,
+#projects h2 {
+    color: black;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+body.dark-mode #about h2,
+body.dark-mode #projects h2 {
+    color: white !important;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #96fbc4;
+    border-color: #96fbc4;
+}
+
+/* Change icon colors to black in light mode */
+.navbar-nav .nav-link i {
+    color: black;
+}
+
+/* Skills and Contact section changes for light mode */
+#skills {
+    background: linear-gradient(135deg, var(--btn-bg), var(--btn-hover-bg));
+}
+
+#contact {
+    background-color: #fff;
+    color: #333;
+}
